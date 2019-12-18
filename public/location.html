@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>
+		</title>
+		<script src="./jss.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+		</script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+		</script>	
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+		</script>
+		<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEcvyOZ4o0dFzDyo1nTXWltfyKFLsDQTg&callback=initMap">
+		</script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				initMap();
+			}) 	
+		</script>
+		
+	</head>
+	<header class="size">
+			<button type="button" id="b1" onclick="btn1();" class="btn btn-lg btn-danger">
+			</button>
+			<button type="button" id="b2" onclick="btn2();" class="btn btn-lg btn-danger">
+					연혁
+			</button>
+			<button type="button" id="b3" onclick="btn3();" class="btn btn-lg btn-danger">
+					오시는법
+			</button>
+			<button type="button" id="b4" onclick="btn4();" class="btn btn-lg btn-danger">
+					재학생 한마디
+			</button>
+			<button type="button" id="b5" onclick="btn5();" class="btn btn-lg btn-danger">
+					입학전형소개
+			</button>
+		<div id="letter">
+			해당 페이지는 1920*1080 사이즈의 Google Chrome 데스크탑 화면에 최적화 되어있습니다.
+		</div>
+	</header>
+	<body>
+		바디 내용
+		<div id="mid">
+		</div>
+		<div id="bodys">
+			<table cellpadding="0" cellspacing="0" id="howtocome" summary="찾아오시는 길을 지하철 이용, 버스 이용할 경우 안내한 표">
+				<caption></caption>
+					<colgroup>
+						<col width="18%">
+						<col width="82%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="mid" scope="row">
+								지하철 이용
+								<img src="./7logo.png" alt="7" width="100px" height="100px">
+							</th>
+							<td>
+							<ul>
+								<li><strong>7호선 공릉(서울과학기술대)역 2번 출구&nbsp; </strong><br>
+								도보 10분 / 마을버스 03번, 교내 경유 마을버스 13번 이용(5분 소요)</li>
+								<li><strong>1호선, 6호선 석계역 1번, 4번, 6번 출구</strong><br>
+								마을버스 03번, 교내 경유 마을버스 13번 이용(15분 소요)</li>
+							</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class="mid" scope="row">
+								버스 이용
+								<img src="./buslogo.png" alt="bus">
+							</th>
+							<td>
+							<ul>
+								<li><strong>지선버스(초록버스) - 1136번, 1141번, 1224번, 1227번</strong></li>
+								<li><strong>마을버스 - 03번</strong><br>
+								노&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;선 : 석계역(1,4,6번 출구) - 공릉(서울과학기술대)역(2번 출구) - 서울과학기술대학교 정문 - 하계동<br>
+								운행시간 : 첫차 05:30&nbsp;/ 막차 00:10</li>
+								<li><strong>교내 경유 마을버스 - 13번</strong><br>
+								노 &nbsp; &nbsp; &nbsp;선 :&nbsp;석계역(1,4,6번 출구) - 공릉(서울과학기술대)역(2번 출구) -&nbsp;서울과학기술대학교(교내 : 정문 - 다산관 - 붕어방 - 다산관 - 주차로터리)<br>
+								운행시간 : 첫차 05:30 / 막차 00:10</li>
+							</ul>
+							</td>
+						</tr>
+					</tbody>
+			</table>
+		<div id="maps">
+		</div>
+	</div>
+	</body>
+	<footer>
+	</footer>
+</html>

@@ -1,5 +1,5 @@
 function initMap() {
-    var stecloc = { lat : 37.631659, lng : 127.077490 };
+    var stecloc = new google.maps.LatLng(37.631659, 127.077490);
     var stech = new google.maps.Map(document.getElementById('maps'),{ zoom : 15, center : stecloc});
     var marker = new google.maps.Marker({position:stecloc,map:stech});
 }
@@ -54,7 +54,7 @@ function btn3() {
 	$('#bodys').css('opacity','0%');
 	setTimeout(() => {
 		initMap();
-	}, 5);
+	}, 50);
 	$('#bodys').css('-webkit-animation-name','appear');
 	$('#bodys').css('opacity','100%');
 	$('#b1').html("처음으로");
